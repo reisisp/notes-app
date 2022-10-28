@@ -3,8 +3,9 @@ import { Layout } from 'antd';
 import classes from './NotesPage.module.scss'
 
 import Sidebar from "../SideBar";
+import PageHeader from "../PageHeader";
 
-const { Header, Footer, Content } = Layout;
+const { Footer, Content } = Layout;
 
 
 export const NotesPage = () => {
@@ -12,7 +13,7 @@ export const NotesPage = () => {
         <Layout className={classes.container}>
             <Sidebar />
             <Layout>
-                <Header>Head</Header>
+                <PageHeader />
                 <Content>Content</Content>
                 <Footer>Footer</Footer>
             </Layout>
