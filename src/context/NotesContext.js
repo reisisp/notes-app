@@ -10,7 +10,8 @@ const service = new NotesService()
 export function NotesContextProvider({ children }) {
     const [notesList, setNotesList] = useState([]);
     const [searchValue, setSearchValue] = useState('')
-    
+    const [currentNoteId, setCurrentNoteId] = useState('')
+
     function getNotesList() {
         service
             .getNotesList()
@@ -62,7 +63,7 @@ export function NotesContextProvider({ children }) {
     }, [])
 
     return (
-        <NotesContext.Provider value={{ notesList, addNoteItem, removeNoteItem, updateNoteItem, searchValue, setSearchValue }}>{children}</NotesContext.Provider>
+        <NotesContext.Provider value={{ notesList, addNoteItem, removeNoteItem, updateNoteItem, searchValue, setSearchValue, currentNoteId, setCurrentNoteId }}>{children}</NotesContext.Provider>
     )
 }
 

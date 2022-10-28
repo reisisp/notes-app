@@ -4,8 +4,7 @@ import classes from './NotesPage.module.scss'
 
 import Sidebar from "../SideBar";
 import PageHeader from "../PageHeader";
-
-const { Footer, Content } = Layout;
+import PageContent from "../PageContent";
 
 
 export const NotesPage = () => {
@@ -14,8 +13,7 @@ export const NotesPage = () => {
             <Sidebar />
             <Layout>
                 <PageHeader />
-                <Content>Content</Content>
-                <Footer>Footer</Footer>
+                <PageContent/>
             </Layout>
         </Layout>
     )
