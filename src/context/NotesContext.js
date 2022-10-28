@@ -8,7 +8,7 @@ const service = new NotesService()
 
 
 export function NotesContextProvider({ children }) {
-    const [notesList, setNotesList] = useState(null);
+    const [notesList, setNotesList] = useState([]);
 
     function getNotesList() {
         service

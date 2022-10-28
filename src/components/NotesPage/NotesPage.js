@@ -1,19 +1,16 @@
 import React from "react";
-import { useContext } from "react";
 import { Layout } from 'antd';
 import classes from './NotesPage.module.scss'
 
-import NotesContext from "../../context/NotesContext";
+import Sidebar from "../SideBar";
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 
 export const NotesPage = () => {
-    const { notesList } = useContext(NotesContext)
-
     return (
         <Layout className={classes.container}>
-            <Sider>Side</Sider>
+            <Sidebar />
             <Layout>
                 <Header>Head</Header>
                 <Content>Content</Content>
