@@ -1,0 +1,14 @@
+.note {
+    position: relative;
+    width: 100%;
+}
+span.note__close {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    cursor: pointer;
+    color: #1890ff;
+    &:hover {
+        color: #40a9ff;
+    }
+}

@@ -16,7 +16,7 @@ export const NoteList = () => {
         >
             {!searchValue &&
                 <List.Item className={classes.list__item}>
-                    <NewNoteItem />
+                    <NewNoteItem  />
                 </List.Item>
             }
 
