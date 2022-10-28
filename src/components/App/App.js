@@ -1,7 +1,8 @@
 import React from "react";
+import NotesPage from "../NotesPage";
 
 export const App = () => {
     return (
-        <div>start</div>
+        <NotesPage />
     )
 }
