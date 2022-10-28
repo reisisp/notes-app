@@ -1,0 +1,8 @@
+aside.sidebar {
+    background-color: #e7edebb5;
+    padding: 0 10px 10px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
